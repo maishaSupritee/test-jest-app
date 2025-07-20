@@ -1,4 +1,4 @@
-import Secondary from "@/app/secondary";
+import Secondary from "@/app/components/secondary";
 import { render, screen, act } from "@testing-library/react";
 
 // Mock timers for controlling setInterval

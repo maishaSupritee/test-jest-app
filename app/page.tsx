@@ -1,5 +1,5 @@
 import Main from "./components/main";
-import Secondary from "./secondary";
+import Secondary from "./components/secondary";
 
 export default function Home() {
   return (
