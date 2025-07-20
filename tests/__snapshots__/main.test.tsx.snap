@@ -32,6 +32,7 @@ exports[`main component matches snapshot 1`] = `
       Photo taken from:
       <a
         class="text-blue-500 hover:underline ml-2"
+        data-testid="pexels-link"
         href="https://www.pexels.com/photo/time-displayed-on-top-of-a-building-1824273/"
       >
         pexels

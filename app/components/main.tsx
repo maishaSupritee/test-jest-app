@@ -13,6 +13,7 @@ export default function Main() {
         <Link
           href="https://www.pexels.com/photo/time-displayed-on-top-of-a-building-1824273/"
           className="text-blue-500 hover:underline ml-2"
+          data-testid="pexels-link"
           onClick={(e) => {
             e.preventDefault();
             window.open(
