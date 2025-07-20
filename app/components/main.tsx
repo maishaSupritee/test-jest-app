@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Main() {
   return (
     <div className="flex flex-col items-center gap-4">
-      <h1 className="pt-10 text-4xl font-bold">Jest Testing</h1>
+      <h1 className="pt-10 text-4xl font-bold">Jest Test</h1>
       <p className=" text-lg">Let&apos;s try writing some unit tests!</p>
       <Image src="/test-image.jpg" alt="Test Image" width={400} height={100} />
       <p className="text-sm text-gray-500">

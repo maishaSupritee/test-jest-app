@@ -14,24 +14,8 @@ const customJestConfig = {
     // Handle module aliases
     "^@/(.*)$": "<rootDir>/$1",
   },
-  collectCoverage: true,
-  collectCoverageFrom: [
-    "app/**/*.{js,jsx,ts,tsx}",
-    "src/**/*.{js,jsx,ts,tsx}",
-    "!**/*.d.ts",
-    "!**/node_modules/**",
-    "!**/vendor/**",
-  ],
-  coverageDirectory: "coverage",
-  coveragePathIgnorePatterns: [
-    "/node_modules/",
-    "/coverage",
-    "package.json",
-    "package-lock.json",
-    "reportWebVitals.ts",
-    "setup.ts",
-    "index.tsx",
-  ],
+  collectCoverage: false,
+
   testPathIgnorePatterns: ["<rootDir>/.next/", "<rootDir>/node_modules/"],
 };
 
