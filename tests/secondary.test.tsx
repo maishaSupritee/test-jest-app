@@ -40,3 +40,29 @@ test("button toggles visibility every 3 seconds", () => {
     screen.queryByRole("button", { name: /click me!/i })
   ).not.toBeInTheDocument();
 });
+
+test("button click creates an alert", () => {
+  window.alert = jest.fn(); // Mock the alert function
+  render(<Secondary />);
+
+  const button = screen.getByRole("button", { name: /click me!/i });
+  button.click();
+  expect(window.alert).toHaveBeenCalledWith("Button clicked!");
+  expect(window.alert).toHaveBeenCalledTimes(1);
+});
+
+test("button has correct styles", () => {
+  render(<Secondary />);
+
+  const button = screen.getByRole("button", { name: /click me!/i });
+  expect(button).toHaveClass(
+    "px-6",
+    "py-3",
+    "bg-purple-500",
+    "text-white",
+    "rounded-lg",
+    "hover:bg-purple-600",
+    "transition-colors",
+    "duration-200"
+  );
+});
